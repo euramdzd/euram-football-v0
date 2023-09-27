@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Score Football</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-size: 17px;
+  }
+  body{
+    background-color: #222;
+  }
+  .match{
+    padding: 20px 0;
+    width: 700px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+  }
+  .match .box{
+    position: relative;
+    padding: 20px;
+    background-color: #555;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    border: 1px solid #777;
+  }
+  .match .box .logo{
+    height: 120px;
+    margin: auto;
+  }
+  .match .box .Time{
+    color: rgb(245, 45, 45);
+  }
+  .match .box .logo img{
+    width:auto;
+    height: 100%;
+  }
+  .match .box .details{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+  }
+  img.country {
+    position: absolute;
+    width: 65px;
+    top:5px;
+    left: 5px;
+    }
+    .box-date{
+      padding: 20px 0;
+      width: 100%;
+      text-align: center;
+      font-size: 22px;
+    }
+</style>
+<body>
+  <div class="box-date">
+    مباريات يوم
+    <span class="date" style="color:#ccc"></span>
+  </div>
+  <div class="match" id="match">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
