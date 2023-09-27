@@ -19,7 +19,6 @@ var Dat_e = ` ${today.getDate()} / ${today.getMonth()+1} / ${today.getFullYear()
 document.querySelector('.date').innerHTML = Dat_e;
   
 var socket  = new WebSocket('wss://wss.allsportsapi.com/live_events?widgetKey='+APIkey+'&timezone=+01:00');
-console.log(socket)
 socket.onmessage = function(e) {
   console.log('ok')
   if (e.data) {
